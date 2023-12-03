@@ -1,0 +1,17 @@
+<!-- 测试UMD IIFE功能 -->
+<!-- <script src="./dist/bundle.umd.js">
+</script>
+
+<script>
+    console.log(utils.whoAmI)
+</script> -->
+
+
+<!-- 测试require.js -->
+<script src="./node_modules/requirejs/require.js"></script>
+
+<script>
+    require(['./dist/bundle.umd.js'], utils => {
+        console.log(utils.whoAmI)
+    })
+</script>
